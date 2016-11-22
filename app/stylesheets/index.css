@@ -1,0 +1,59 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  color: black;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 32px;
+  letter-spacing: 1px;
+}
+
+span {
+  display: block;
+  float: left;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.app {
+  position: relative;
+  overflow: hidden;
+}
+
+.left,
+.right {
+  display: block;
+  content: '';
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  mix-blend-mode: darken;
+}
+  .left {
+    left: 0;
+    right: 50%;
+    background-color: red;
+  }
+  .right {
+    left: 50%;
+    right: 0;
+    background-color: green;
+  }
