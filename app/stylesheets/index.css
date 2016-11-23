@@ -50,10 +50,8 @@ span {
   .left {
     left: 0;
     right: 50%;
-    background-color: red;
   }
   .right {
     left: 50%;
     right: 0;
-    background-color: green;
   }
